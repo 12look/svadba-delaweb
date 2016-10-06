@@ -12,19 +12,30 @@
 <body>
 
 <div class="overlay"></div>
-<div class="popup">
+<div class="popup" id="popup">
     <div class="order__form text-center">
         <h3>Заказать консультацию</h3>
-        <form action="">
+        <form action="" id="order-form-three">
             <select name="service-type">
                 <option selected>Выберите услугу</option>
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="">3</option>
             </select>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
+            <input type="text" placeholder="Ваше имя" required="" data-parsley-required-message="Поле не может быть пустым">
+            <input type="text" placeholder="Ваш телефон" required="" data-parsley-required-message="Поле не может быть пустым">
             <textarea name="" id="" rows="4" placeholder="Комментарий"></textarea>
+            <input type="submit" class="btn order__btn" value="Заказать">
+        </form>
+    </div>
+    <span class="close">X</span>
+</div>
+
+<div class="popup popup-call" id="popup-call">
+    <div class="order__form text-center">
+        <h3>Заказать обратный звонок</h3>
+        <form action="" id="order-call">
+            <input type="text" placeholder="Ваш телефон" required="" data-parsley-required-message="Поле не может быть пустым">
             <input type="submit" class="btn order__btn" value="Заказать">
         </form>
     </div>
@@ -64,7 +75,7 @@
                 </div>
                 <div class="contacts__phone">
                     <p class="number"><a href="tel:+79219191179">+7<i class="dot-ic"></i>921<i class="dot-ic"></i>919<i class="dot-ic"></i>11<i class="dot-ic"></i>79</a></p>
-                    <a href="" class="call">Обратный звонок</a>
+                    <a href="" class="call" id="call">Обратный звонок</a>
                 </div>
                 <div class="contacts__mail"><a href="mailto:info@natashadorogaya.ru">info@natashadorogaya.ru</a></div>
             </div>
@@ -101,7 +112,7 @@
             </div>
         </div>
     </div>
-        <div class="row info__statistic center-block">
+        <div class="info__statistic center-block">
             <div class="info__statistic__item">
                 <div class="statistic__heart"><i class="heart"></i></div>
                 <div class="statistic__text"><span>9 лет<br>успешной работы</span></div>
@@ -126,7 +137,7 @@
     <div class="container">
         <div class="row">
             <div class="info__action center-block">
-                <a href="" class="btn info__action__btn"><span class="dashed-text">Я согласна!</span></a>
+                <a href="" class="btn info__action__btn" id="i-agree"><span class="dashed-text">Я согласна!</span></a>
                 <p class="info__action__text">получить консультацию и начать<br>планирование свадьбы прямо сейчас</p>
             </div>
         </div>
@@ -309,9 +320,7 @@
                         <p class="grid-item__pair-names">Дмитрий и Надежда</p>
                         <p class="grid-item__title">Сумерки</p>
                     </div>
-                    <div class="grid-item grid-item__more">
-                        <a href="#" class="grid-item__more-text"><span>Посмотреть<br>другие свадьбы</span></a>
-                    </div>
+
                     <div class="grid-item">
                         <a href="">
                             <img src="./img/portfolio-1.jpg" alt="">
@@ -336,9 +345,6 @@
                         <p class="grid-item__pair-names">Дмитрий и Надежда</p>
                         <p class="grid-item__title">Сумерки</p>
                     </div>
-                    <div class="grid-item grid-item__more">
-                        <a href="#" class="grid-item__more-text"><span>Посмотреть<br>другие свадьбы</span></a>
-                    </div>
                 </div>
                 <div class="big-portfolio-slider">
                     <div class="grid-item grid-item--horizontalbig">
@@ -349,13 +355,6 @@
                         <p class="grid-item__pair-names">Александр и Мария</p>
                         <p class="grid-item__title">Садовый прованс</p>
                     </div>
-                    <div class="grid-item grid-item--horizontalbig grid-item__video">
-                        <a href="#">
-                            <img src="./img/portfolio-7.jpg" alt="">
-                        </a>
-                        <a href="#" class="grid-item__video-link">Канал НД.Про на YouTube</a>
-                    </div>
-
                     <div class="grid-item grid-item--horizontalbig">
                         <a href="">
                             <img src="./img/portfolio-5.jpg" alt="">
@@ -364,12 +363,25 @@
                         <p class="grid-item__pair-names">Александр и Мария</p>
                         <p class="grid-item__title">Садовый прованс</p>
                     </div>
-                    <div class="grid-item grid-item--horizontalbig grid-item__video">
-                        <a href="#">
-                            <img src="./img/portfolio-7.jpg" alt="">
+                    <div class="grid-item grid-item--horizontalbig">
+                        <a href="">
+                            <img src="./img/portfolio-5.jpg" alt="">
                         </a>
-                        <a href="#" class="grid-item__video-link">Канал НД.Про на YouTube</a>
+                        <span class="grid-item__count">78 фото</span>
+                        <p class="grid-item__pair-names">Александр и Мария</p>
+                        <p class="grid-item__title">Садовый прованс</p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid clearfix">
+                <div class="grid-item grid-item--horizontalbig grid-item__video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vPWZMMBl7II" frameborder="0" allowfullscreen></iframe>
+                    <a href="#" class="grid-item__video-link">Канал НД.Про на YouTube</a>
+                </div>
+                <div class="grid-item grid-item__more">
+                    <a href="#" class="grid-item__more-text"><span>Посмотреть<br>другие свадьбы</span></a>
                 </div>
             </div>
         </div>
@@ -462,15 +474,15 @@
         <div class="row">
             <div class="order__form text-center">
                 <h3>Заказать консультацию</h3>
-                <form action="">
+                <form action="" id="order-form-one">
                     <select name="service-type" id="service-type">
                         <option selected>Выберите услугу</option>
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
                     </select>
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="text" placeholder="Ваш телефон">
+                    <input type="text" placeholder="Ваше имя" required="" data-parsley-required-message="Поле не может быть пустым">
+                    <input type="text" placeholder="Ваш телефон" required="" data-parsley-required-message="Поле не может быть пустым">
                     <textarea name="" id="" rows="4" placeholder="Комментарий"></textarea>
                     <input type="submit" class="btn order__btn" value="Заказать">
                 </form>
@@ -538,13 +550,43 @@
             <h3>Вопрос-ответ</h3>
         </div>
         <div class="row">
-            <ol class="question-answer__list">
-                <li><a href="">С каким бюджетом Вы работаете?</a></li>
-                <li><a href="">Сколько занимает подготовка к свадьбе?</a></li>
-                <li><a href="">Какова стоимость услуг агентства при подготовке свадьбы под ключ?</a></li>
-                <li><a href="">С каким бюджетом Вы работаете?</a></li>
-                <li><a href="">Сколько занимает подготовка к свадьбе?</a></li>
-                <li><a href="">Какова стоимость услуг агентства при подготовке свадьбы под ключ?</a></li>
+            <ol class="question-answer__list" id="accordion">
+                <li>С каким бюджетом Вы работаете?</li>
+                <div>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cum debitis dicta dolor esse,
+                        et expedita incidunt libero molestias neque nisi nostrum, quidem similique vel. Laboriosam,
+                        possimus quisquam. At.</p>
+                </div>
+                <li>Сколько занимает подготовка к свадьбе?</li>
+                <div>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cum debitis dicta dolor esse,
+                        et expedita incidunt libero molestias neque nisi nostrum, quidem similique vel. Laboriosam,
+                        possimus quisquam. At.</p>
+                </div>
+                <li>Какова стоимость услуг агентства при подготовке свадьбы под ключ?</li>
+                <div>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cum debitis dicta dolor esse,
+                        et expedita incidunt libero molestias neque nisi nostrum, quidem similique vel. Laboriosam,
+                        possimus quisquam. At.</p>
+                </div>
+                <li>С каким бюджетом Вы работаете?</li>
+                <div>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cum debitis dicta dolor esse,
+                        et expedita incidunt libero molestias neque nisi nostrum, quidem similique vel. Laboriosam,
+                        possimus quisquam. At.</p>
+                </div>
+                <li>Сколько занимает подготовка к свадьбе?</li>
+                <div>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cum debitis dicta dolor esse,
+                        et expedita incidunt libero molestias neque nisi nostrum, quidem similique vel. Laboriosam,
+                        possimus quisquam. At.</p>
+                </div>
+                <li>Какова стоимость услуг агентства при подготовке свадьбы под ключ?</li>
+                <div>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cum debitis dicta dolor esse,
+                        et expedita incidunt libero molestias neque nisi nostrum, quidem similique vel. Laboriosam,
+                        possimus quisquam. At.</p>
+                </div>
             </ol>
         </div>
         <div class="separator"></div>
@@ -556,30 +598,40 @@
             <h3>Блог</h3>
         </div>
     </div>
-    <div class="post-wrapper clearfix">
-        <div class="blog__big-post">
-            <div class="blog__post-img">
-                <img src="./img/blog-1.jpg" alt="">
-            </div>
-            <p class="blog__post-date">12.08.2016</p>
-            <p class="blog__post-title">Тренды свадебного декора 2017: лучшие стилевые решения</p>
-        </div>
-        <div class="small__posts">
-            <div class="blog__small-post">
-                <div class="blog__post-img">
-                    <img src="./img/blog-2.jpg" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="post-wrapper clearfix">
+                <div class="blog__big-post">
+                    <a href="">
+                        <div class="blog__post-img">
+                            <img src="./img/blog-1.jpg" alt="">
+                        </div>
+                    </a>
+                    <p class="blog__post-date">12.08.2016</p>
+                    <p class="blog__post-title"><a href="">Тренды свадебного декора 2017: лучшие стилевые решения</a></p>
                 </div>
-                <p class="blog__post-date">12.08.2016</p>
-                <p class="blog__post-title">Уложиться в бюджет: на чем никогда нельзя экономить?</p>
-            </div><div class="blog__small-post last">
-                <div class="blog__post-img">
-                    <img src="./img/blog-3.jpg" alt="">
+                <div class="small__posts">
+                    <div class="blog__small-post">
+                        <a href="">
+                            <div class="blog__post-img">
+                                <img src="./img/blog-2.jpg" alt="">
+                            </div>
+                        </a>
+                        <p class="blog__post-date">12.08.2016</p>
+                        <p class="blog__post-title"><a href="">Уложиться в бюджет: на чем никогда нельзя экономить?</a></p>
+                    </div><div class="blog__small-post last">
+                    <a href="">
+                        <div class="blog__post-img">
+                            <img src="./img/blog-3.jpg" alt="">
+                        </div>
+                    </a>
+                    <p class="blog__post-date">12.08.2016</p>
+                    <p class="blog__post-title"><a href="">Чем занимается свадебный распорядитель и когда без него не обойтись?</a></p>
                 </div>
-                <p class="blog__post-date">12.08.2016</p>
-                <p class="blog__post-title">Чем занимается свадебный распорядитель и когда без него не обойтись?</p>
-            </div>
+                </div>
+                <a href="/" class="blog__post-action-btn"><p><span>Читать блог</span></p></a>
         </div>
-        <a href="/" class="blog__post-action-btn"><p><span>Читать блог</span></p></a>
+    </div>
     </div>
 </section>
 <section class="order two">
@@ -587,15 +639,15 @@
         <div class="row">
             <div class="order__form text-center">
                 <h3>Заказать консультацию</h3>
-                <form action="">
+                <form action="" id="order-form-two">
                     <select name="service-type" id="service-type2">
                         <option selected>Выберите услугу</option>
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
                     </select>
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="text" placeholder="Ваш телефон">
+                    <input type="text" placeholder="Ваше имя" required="" data-parsley-required-message="Поле не может быть пустым">
+                    <input type="text" placeholder="Ваш телефон" required="" data-parsley-required-message="Поле не может быть пустым">
                     <textarea name="" id="" rows="4" placeholder="Комментарий"></textarea>
                     <input type="submit" class="btn order__btn" value="Заказать">
                 </form>
@@ -662,13 +714,15 @@
                 <li class="footer__col-item"><a href="">Свадьба под ключ</a></li>
                 <li class="footer__col-item"><a href="">Свадебный блог</a></li>
             </ul>
-            <div class="column__tittle column__tittle--contact">Контакты</div>
+            <div class="column__tittle column__tittle--contact"><a href="">Контакты</a></div>
         </div>
     </div>
 </footer>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;scroll=false" type="text/javascript"></script>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/slick/slick.min.js"></script>
+<script src="js/parsley.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.reviews__slider').slick({
@@ -736,50 +790,45 @@
             $('#mobile-menu').toggleClass('open');
         });
 
-        $('.services__item__order').click(function(e) {
-
-            e.preventDefault();
+        function showPopUp(item) {
             $('html').addClass('stop-scrolling');
             $('.overlay').fadeIn(500);
+            $(item).show();
+        };
+        function hidePopUp(item) {
+            $('html').removeClass('stop-scrolling');
+            $('.overlay').hide();
+            $(item).hide();
+        };
 
-            var winH = $(window).height();
-            var winW = $(window).width();
-
-            $('.popup').css('top',  winH/2-$('.popup').height()/2);
-            $('.popup').css('left', winW/2-$('.popup').width()/2);
-            $('.popup').show();
+        $('.services__item__order, #i-agree').click(function(e) {
+            e.preventDefault();
+            showPopUp('#popup');
         });
-//        var $window = $(window);
-//
-//        function checkWidth() {
-//            var windowsize = $window.width();
-//            var $grid = $('#grid');
-//            if (windowsize >= 1200) {
-//                $grid.html(w1200);
-//            } else if (windowsize < 1200 && windowsize >= 992) {
-//                $grid.html(w992);
-//            } else if (windowsize < 992 && windowsize >= 768) {
-//                $grid.html(w768);
-//            } else if (windowsize < 768) {
-//                $grid.html(w320);
-//            }
-//        }
-//
-//        checkWidth();
-//        $(window).resize(checkWidth);
-//
-//        var grid = $('.grid').masonry({
-//            // options
-//            itemSelector: '.grid-item',
-//            columnWidth: 230,
-//            fitWidth: true,
-//            gutter: 30
-//        });
-//        grid.on('click', function () {
-//            $("#2").insertBefore( $("#1") );
-//           grid.masonry('reloadItems');
-//           console.log('ok');
-//        });
+
+        $('.overlay, .close').click(function (e) {
+            e.preventDefault();
+            hidePopUp('#popup');
+        });
+
+        $('#call').click(function(e) {
+            e.preventDefault();
+            showPopUp('#popup-call');
+        });
+
+        $('.overlay, .close').click(function (e) {
+            e.preventDefault();
+            hidePopUp('#popup-call');
+        });
+
+        $('#order-form-one, #order-form-two, #order-form-three, #order-call').parsley();
+
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            header: "li",
+            autoHeight: false,
+            heightStyle: "content"
+        });
     })
 </script>
 <script type="text/javascript">
