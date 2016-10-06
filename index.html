@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="js/slick/slick.css"/>
+<link rel="stylesheet" href="css/main.css">
+<body>
+
+<div class="overlay"></div>
+<div class="popup">
+    <div class="order__form text-center">
+        <h3>Заказать консультацию</h3>
+        <form action="">
+            <select name="service-type">
+                <option selected>Выберите услугу</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш телефон">
+            <textarea name="" id="" rows="4" placeholder="Комментарий"></textarea>
+            <input type="submit" class="btn order__btn" value="Заказать">
+        </form>
+    </div>
+    <span class="close">X</span>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="logo-col">
+            <a href="/" class="header__logo">
+                <img src="images/logo.png" alt="Логотип">
+            </a>
+        </div>
+
+        <div class="navigation-col hidden-xs">
+            <nav class="header__navigation">
+                <ul>
+                    <li><a href="">о нас</a></li>
+                    <li><a href="">услуги и цены</a></li>
+                    <li><a href="">портфолио</a></li>
+                    <li><a href="">партнеры</a></li>
+                    <li><a href="">отзывы</a></li>
+                    <li><a href="">вопрос-ответ</a></li>
+                    <li><a href="">блог</a></li>
+                    <li><a href="">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="contacts-col">
+            <div class="contacts">
+                <div class="contacts__social">
+                    <a href=""><i class="vk-ic"></i></a>
+                    <a href=""><i class="fb-ic"></i></a>
+                    <a href=""><i class="youtube-ic"></i></a>
+                    <a href=""><i class="insta-ic"></i></a>
+                </div>
+                <div class="contacts__phone">
+                    <p class="number"><a href="tel:+79219191179">+7<i class="dot-ic"></i>921<i class="dot-ic"></i>919<i class="dot-ic"></i>11<i class="dot-ic"></i>79</a></p>
+                    <a href="" class="call">Обратный звонок</a>
+                </div>
+                <div class="contacts__mail"><a href="mailto:info@natashadorogaya.ru">info@natashadorogaya.ru</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="mobile-menu visible-xs">
+    <div class="hamb-icon" id="hamb-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="mobile-menu-list" id="mobile-menu">
+        <li class="mobile-menu-item"><a href="">О нас</a></li>
+        <li class="mobile-menu-item"><a href="">Услуги и цены</a></li>
+        <li class="mobile-menu-item"><a href="">Портфолио</a></li>
+        <li class="mobile-menu-item no-mb"><a href="">Партнеры</a></li>
+        <li class="mobile-menu-item"><a href="">Отзывы</a></li>
+        <li class="mobile-menu-item"><a href="">Вопрос-ответ</a></li>
+        <li class="mobile-menu-item"><a href="">Блог</a></li>
+        <li class="mobile-menu-item no-mb"><a href="">Контакты</a></li>
+    </ul>
+</section>
+<section class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="info__title center-block">
+                    <div class="info__title__wrapper">
+                        Организация свадеб в Санкт-Петербурге<br>
+                        Свадебная флористика и декор
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row info__statistic center-block">
+            <div class="info__statistic__item">
+                <div class="statistic__heart"><i class="heart"></i></div>
+                <div class="statistic__text"><span>9 лет<br>успешной работы</span></div>
+            </div>
+            <div class="info__statistic__item">
+                <div class="statistic__heart"><i class="heart"></i></div>
+                <div class="statistic__text"><span>более 100<br>счастливых свадеб</span></div>
+            </div>
+            <div class="info__statistic__item">
+                <div class="statistic__heart"><i class="heart"></i></div>
+                <div class="statistic__text"><span>надежные<br>партнеры</span></div>
+            </div>
+            <div class="info__statistic__item">
+                <div class="statistic__heart"><i class="heart"></i></div>
+                <div class="statistic__text"><span>индивидуальная<br>концепция и стиль<br>каждой свадьбы</span></div>
+            </div>
+            <div class="info__statistic__item">
+                <div class="statistic__heart"><i class="heart"></i></div>
+                <div class="statistic__text"><span>VIP свадьбы<br>"под ключ"</span></div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="info__action center-block">
+                <a href="" class="btn info__action__btn"><span class="dashed-text">Я согласна!</span></a>
+                <p class="info__action__text">получить консультацию и начать<br>планирование свадьбы прямо сейчас</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="aboutme">
+    <div class="container">
+        <div class="row center-block">
+            <div class="aboutme__text text-center">
+                Краткий текст. Меня зовут Наташа Дорогая. Живу и работаю в Санкт-Петербурге. Профессионально занимаюсь организацией свадеб и
+                торжеств. Другая любимая уже много лет профессия – флорист-дизайнер. Управляю компаниями Fibbonaci Flowers и НД.Про. Помимо
+                этого я арт-директор студии флористического коллажа Любови Яковлевой «Новое направление». Являюсь членом МОА «Союз
+                дизайнеров». В области свадеб успешно реализовано много интересных мероприятий.
+            </div>
+        </div>
+        <div class="row aboutme__venzel text-center">
+            <i class="venzel-ic"></i>
+        </div>
+    </div>
+</section>
+<section class="services">
+    <div class="container">
+        <div class="row text-center">
+            <h3>Услуги и цены</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-1.png" alt="">
+                </div>
+                <p class="services__item__text">Свадьба<br>под ключ</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-2.png" alt="">
+                </div>
+                <p class="services__item__text">Свадебная<br>флористика</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-3.png" alt="">
+                </div>
+                <p class="services__item__text">Декор<br>свадеб</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-4.png" alt="">
+                </div>
+                <p class="services__item__text">Выездная<br>регистрация</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-5.png" alt="">
+                </div>
+                <p class="services__item__text">Организация<br>банкета</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-6.png" alt="">
+                </div>
+                <p class="services__item__text">Свадебные<br>букеты невесты</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-7.png" alt="">
+                </div>
+                <p class="services__item__text">Свадебный<br>декор в аренду</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-8.png" alt="">
+                </div>
+                <p class="services__item__text">Candy bar<br>для свадьбы</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                     <img src="./img/service-9.png" alt="">
+                </div>
+                <p class="services__item__text">Свадебный<br>консалтинг</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+            <div class="col-md-15 col-sm-15 col-xs-6 services__item">
+                <div class="services__item__img">
+                    <img src="./img/service-10.png" alt="">
+                </div>
+                <p class="services__item__text">Организация<br>предложения<br>руки и сердца</p>
+                <a href="#" class="services__item__order pink-dashed">Заказать</a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="services__cafe__img">
+                    <img src="./img/service-11.png" alt="">
+                </div>
+                <p class="services__cafe__desc">
+                    А также у нас есть “Цветочная кофейня”,<br>
+                    где можно обсудить все подробности вашей свадьбы, попробовать вкуснейший кофе<br>
+                    с изысканными десертами и просто приятно провести время в юутной атмосфере.
+                </p>
+                <a href="#" class="services__cafe__more pink-dashed">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio">
+    <div class="container">
+        <div class="row text-center">
+            <h3>Портфолио</h3>
+        </div>
+
+        <!--320-->
+        <!--<div class="grid clearfix" id="grid">-->
+            <!--<div class="grid-item col-xs-6" id="port1"><img src="./img/portfolio-1.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-xs-6" id="port2"><img src="./img/portfolio-2.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-xs-12 grid-item&#45;&#45;horizontalbig" id="port5"><img src="./img/portfolio-5.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-xs-12 grid-item&#45;&#45;horizontalbig" id="port7"><img src="./img/portfolio-7.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-xs-6" id="port8"><img src="./img/portfolio-8.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-xs-6" id="port9"><img src="http://placehold.it/230x230" alt=""></div>-->
+        <!--</div>-->
+
+        <!--768-->
+        <!--<div class="grid clearfix">-->
+            <!--<div class="grid-item col-sm-4" id="port1"><img src="./img/portfolio-1.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-4" id="port2"><img src="./img/portfolio-2.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-4" id="port3"><img src="./img/portfolio-3.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-8 grid-item&#45;&#45;horizontalbig" id="port5"><img src="./img/portfolio-5.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-4 grid-item&#45;&#45;verticalbig" id="port4"><img src="./img/portfolio-4.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-8 grid-item&#45;&#45;horizontalbig" id="port7"><img src="./img/portfolio-7.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-4" id="port8"><img src="./img/portfolio-8.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-4"  id="port6"><img src="./img/portfolio-6.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-sm-4" id="port9"><img src="http://placehold.it/230x230" alt=""></div>-->
+        <!--</div>-->
+
+        <!--992-->
+        <!--<div class="grid clearfix">-->
+            <!--<div class="grid-item col-md-4" id="port1"><img src="./img/portfolio-1.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-4" id="port2"><img src="./img/portfolio-2.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-4 grid-item&#45;&#45;verticalbig" id="port4"><img src="./img/portfolio-4.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-4" id="port3"><img src="./img/portfolio-3.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-4"  id="port6"><img src="./img/portfolio-6.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-8 grid-item&#45;&#45;horizontalbig" id="port5"><img src="./img/portfolio-5.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-4" id="port8"><img src="./img/portfolio-8.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-8 grid-item&#45;&#45;horizontalbig" id="port7"><img src="./img/portfolio-7.jpg" alt=""></div>-->
+            <!--<div class="grid-item col-md-4" id="port9"><img src="http://placehold.it/230x230" alt=""></div>-->
+        <!--</div>-->
+
+        <!--1200-->
+        <div class="row">
+            <div class="grid clearfix">
+                <div class="small-portfolio-slider">
+                    <div class="grid-item">
+                        <a href="">
+                            <img src="./img/portfolio-1.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">65 фото</span>
+                        <p class="grid-item__pair-names">Александр и Мария</p>
+                        <p class="grid-item__title">Лавандовая свадьба</p>
+                    </div>
+                    <div class="grid-item">
+                        <a href="">
+                            <img src="./img/portfolio-2.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">171 фото</span>
+                        <p class="grid-item__pair-names">Павел и Екатерина</p>
+                        <p class="grid-item__title">Тиффани</p>
+                    </div>
+                    <div class="grid-item">
+                        <a href="">
+                            <img src="./img/portfolio-3.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">42 фото</span>
+                        <p class="grid-item__pair-names">Дмитрий и Надежда</p>
+                        <p class="grid-item__title">Сумерки</p>
+                    </div>
+                    <div class="grid-item grid-item__more">
+                        <a href="#" class="grid-item__more-text"><span>Посмотреть<br>другие свадьбы</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="">
+                            <img src="./img/portfolio-1.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">65 фото</span>
+                        <p class="grid-item__pair-names">Александр и Мария</p>
+                        <p class="grid-item__title">Лавандовая свадьба</p>
+                    </div>
+                    <div class="grid-item">
+                        <a href="">
+                            <img src="./img/portfolio-2.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">171 фото</span>
+                        <p class="grid-item__pair-names">Павел и Екатерина</p>
+                        <p class="grid-item__title">Тиффани</p>
+                    </div>
+                    <div class="grid-item">
+                        <a href="">
+                            <img src="./img/portfolio-3.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">42 фото</span>
+                        <p class="grid-item__pair-names">Дмитрий и Надежда</p>
+                        <p class="grid-item__title">Сумерки</p>
+                    </div>
+                    <div class="grid-item grid-item__more">
+                        <a href="#" class="grid-item__more-text"><span>Посмотреть<br>другие свадьбы</span></a>
+                    </div>
+                </div>
+                <div class="big-portfolio-slider">
+                    <div class="grid-item grid-item--horizontalbig">
+                        <a href="">
+                            <img src="./img/portfolio-5.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">78 фото</span>
+                        <p class="grid-item__pair-names">Александр и Мария</p>
+                        <p class="grid-item__title">Садовый прованс</p>
+                    </div>
+                    <div class="grid-item grid-item--horizontalbig grid-item__video">
+                        <a href="#">
+                            <img src="./img/portfolio-7.jpg" alt="">
+                        </a>
+                        <a href="#" class="grid-item__video-link">Канал НД.Про на YouTube</a>
+                    </div>
+
+                    <div class="grid-item grid-item--horizontalbig">
+                        <a href="">
+                            <img src="./img/portfolio-5.jpg" alt="">
+                        </a>
+                        <span class="grid-item__count">78 фото</span>
+                        <p class="grid-item__pair-names">Александр и Мария</p>
+                        <p class="grid-item__title">Садовый прованс</p>
+                    </div>
+                    <div class="grid-item grid-item--horizontalbig grid-item__video">
+                        <a href="#">
+                            <img src="./img/portfolio-7.jpg" alt="">
+                        </a>
+                        <a href="#" class="grid-item__video-link">Канал НД.Про на YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="banner">
+    <img src="./images/banner.jpg" alt="Banner">
+</section>
+<section class="partners">
+    <div class="container">
+        <div class="row text-center">
+            <div class="partners__block clearfix">
+
+                <span class="corner TL"></span>
+                <span class="corner TR"></span>
+                <span class="corner BL"></span>
+                <span class="corner BR"></span>
+
+                <h3>Партнеры</h3>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item first-row">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-summer-dvor.png" alt="">
+                        </div>
+                        <p class="partners__title">Летний дворец</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item first-row">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-konst-dvor.png" alt="">
+                        </div>
+                        <p class="partners__title">Константиновский дворец</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item first-row">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-petr-krep.png" alt="">
+                        </div>
+                        <p class="partners__title">Петропавловская крепость</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item first-row">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-design-rozavetrov.png" alt="">
+                        </div>
+                        <p class="partners__title">Дизайн студия Роза Ветров</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-keytering.png" alt="">
+                        </div>
+                        <p class="partners__title">Кейтеринг Grand</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-denisov-nikolaev.png" alt="">
+                        </div>
+                        <p class="partners__title">Денисов и Николаев</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-bank-zal.png" alt="">
+                        </div>
+                        <p class="partners__title">Банкетный зал Sentosa</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 vcenter">
+                    <div class="partners__item">
+                        <div class="partners__item__img">
+                            <img src="./img/partners-hotel-indigo.png" alt="">
+                        </div>
+                        <p class="partners__title">Отель Indigo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="order">
+    <div class="container">
+        <div class="row">
+            <div class="order__form text-center">
+                <h3>Заказать консультацию</h3>
+                <form action="">
+                    <select name="service-type" id="service-type">
+                        <option selected>Выберите услугу</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <textarea name="" id="" rows="4" placeholder="Комментарий"></textarea>
+                    <input type="submit" class="btn order__btn" value="Заказать">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="container">
+        <div class="row text-center">
+            <h3>Отзывы</h3>
+        </div>
+        <div class="reviews__slider">
+            <div class="reviews__slide-item">
+                <div class="reviews__slide-item__img">
+                    <img src="./img/reviews-1.jpg" alt="">
+                </div>
+                <div class="reviews__content">
+                    <p class="reviews__pair-names">Александра и Михаил</p>
+                    <p class="reviews__date">12.03.2016</p>
+                    <div class="reviews__text">
+                        Свадьба-это не просто праздник.
+                        Свадьба-это масштабное мероприятие, которое готовится порой не один месяц. И в этой подготовке очень важно не упустить огромное количество нюансов, начиная от выбора помещения, декора, флористики и, собственно, концепции всего торжества до мельчайших деталей. Комфортно должно быть не только молодоженам, но и гостям: не тесно, не душно, не слишком далеко и т.д. В этой суете так легко что-то упустить из виду, не обратить внимание на мелочи, кажущиеся незначительными на первый взгляд...
+                    </div>
+                    <a href="" class="reviews__more-link">читать полностью</a>
+                </div>
+            </div>
+            <div class="reviews__slide-item">
+                <div class="reviews__slide-item__img">
+                    <img src="./img/reviews-2.jpg" alt="">
+                </div>
+                <div class="reviews__content">
+                    <p class="reviews__pair-names">Олег и Ирина</p>
+                    <p class="reviews__date">12.03.2016</p>
+                    <div class="reviews__text">
+                        В сентябре 2013 случилось самое чудесное чудо в нашей жизни- наша свадьба! Организатором и вдохновителем которой была наша Дорогая Наташа!
+                        Хочется сказать огромное спасибо, за интересные идеи проведения и программы, за великолепное оформление столов, зала и красивейшие цветочные композиции!
+                        Нам не пришлось ни о чем волноваться, все прошло замечательно! Огромное спасибо всей команде!
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__slide-item">
+                <div class="reviews__slide-item__img">
+                    <img src="./img/reviews-1.jpg" alt="">
+                </div>
+                <div class="reviews__content">
+                    <p class="reviews__pair-names">Александра и Михаил</p>
+                    <p class="reviews__date">12.03.2016</p>
+                    <div class="reviews__text">
+                        Свадьба-это не просто праздник.
+                        Свадьба-это масштабное мероприятие, которое готовится порой не один месяц. И в этой подготовке очень важно не упустить огромное количество нюансов, начиная от выбора помещения, декора, флористики и, собственно, концепции всего торжества до мельчайших деталей. Комфортно должно быть не только молодоженам, но и гостям: не тесно, не душно, не слишком далеко и т.д. В этой суете так легко что-то упустить из виду, не обратить внимание на мелочи, кажущиеся незначительными на первый взгляд...
+                    </div>
+                    <a href="" class="reviews__more-link">читать полностью</a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <a href="" class="reviews__all-link">Открыть все 23 отзыва</a>
+        </div>
+    </div>
+</section>
+<section class="question-answer">
+    <div class="container">
+        <div class="row text-center">
+            <h3>Вопрос-ответ</h3>
+        </div>
+        <div class="row">
+            <ol class="question-answer__list">
+                <li><a href="">С каким бюджетом Вы работаете?</a></li>
+                <li><a href="">Сколько занимает подготовка к свадьбе?</a></li>
+                <li><a href="">Какова стоимость услуг агентства при подготовке свадьбы под ключ?</a></li>
+                <li><a href="">С каким бюджетом Вы работаете?</a></li>
+                <li><a href="">Сколько занимает подготовка к свадьбе?</a></li>
+                <li><a href="">Какова стоимость услуг агентства при подготовке свадьбы под ключ?</a></li>
+            </ol>
+        </div>
+        <div class="separator"></div>
+    </div>
+</section>
+<section class="blog">
+    <div class="container">
+        <div class="row text-center">
+            <h3>Блог</h3>
+        </div>
+    </div>
+    <div class="post-wrapper clearfix">
+        <div class="blog__big-post">
+            <div class="blog__post-img">
+                <img src="./img/blog-1.jpg" alt="">
+            </div>
+            <p class="blog__post-date">12.08.2016</p>
+            <p class="blog__post-title">Тренды свадебного декора 2017: лучшие стилевые решения</p>
+        </div>
+        <div class="small__posts">
+            <div class="blog__small-post">
+                <div class="blog__post-img">
+                    <img src="./img/blog-2.jpg" alt="">
+                </div>
+                <p class="blog__post-date">12.08.2016</p>
+                <p class="blog__post-title">Уложиться в бюджет: на чем никогда нельзя экономить?</p>
+            </div><div class="blog__small-post last">
+                <div class="blog__post-img">
+                    <img src="./img/blog-3.jpg" alt="">
+                </div>
+                <p class="blog__post-date">12.08.2016</p>
+                <p class="blog__post-title">Чем занимается свадебный распорядитель и когда без него не обойтись?</p>
+            </div>
+        </div>
+        <a href="/" class="blog__post-action-btn"><p><span>Читать блог</span></p></a>
+    </div>
+</section>
+<section class="order two">
+    <div class="container">
+        <div class="row">
+            <div class="order__form text-center">
+                <h3>Заказать консультацию</h3>
+                <form action="">
+                    <select name="service-type" id="service-type2">
+                        <option selected>Выберите услугу</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <textarea name="" id="" rows="4" placeholder="Комментарий"></textarea>
+                    <input type="submit" class="btn order__btn" value="Заказать">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="social">
+    <div class="container">
+        <div class="row text-center">
+            <h4>Понравились наши услуги? Расскажите друзьям!</h4>
+        </div>
+        <div class="row text-center">
+            <div class="social__icons">
+                <a href=""><i class="vk-ic"></i></a>
+                <a href=""><i class="fb-ic"></i></a>
+                <a href=""><i class="youtube-ic"></i></a>
+                <a href=""><i class="insta-ic"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="map" id="map">
+    <!--<div class="map-label">-->
+        <!--<p class="map-label__title">"Цветочная кофейня"</p>-->
+        <!--<p class="map-label__address">Чкаловский пр., 52</p>-->
+        <!--<p class="map-label__worktime">ежедневно<br>10:00 - 21:00</p>-->
+        <!--<div class="contacts__phone">-->
+            <!--<p class="number"><a href="tel:+79219191179"></a>+7<i class="dot-ic"></i>921<i class="dot-ic"></i>919<i class="dot-ic"></i>11<i class="dot-ic"></i>79</p>-->
+            <!--<a href="" class="call">Обратный звонок</a>-->
+        <!--</div>-->
+        <!--<div class="contacts__mail"><a href="mailto:info@natashadorogaya.ru">info@natashadorogaya.ru</a></div>-->
+    <!--</div>-->
+    <!--<div class="map-palka"></div>-->
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <p>Организация свадеб<br>в Санкт-Петербурге</p>
+            <p>Свадебная флористика<br>и декор</p>
+        </div>
+        <div class="footer__col">
+            <div class="column__tittle">Свадебное агентство НД.Про</div>
+            <ul>
+                <li class="footer__col-item"><a href="">О нас</a></li>
+                <li class="footer__col-item"><a href="">Организация свадьбы под ключ</a></li>
+                <li class="footer__col-item"><a href="">Выездная регистрация</a></li>
+                <li class="footer__col-item"><a href="">Планирование банкета</a></li>
+                <li class="footer__col-item"><a href="">Свадебная консультация</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <div class="column__tittle">Студия флористики<br>и декора НД.Про Flowers</div>
+            <ul>
+                <li class="footer__col-item"><a href="">Свадебная флористика под ключ</a></li>
+                <li class="footer__col-item"><a href="">Декор свадеб</a></li>
+                <li class="footer__col-item"><a href="">Букет невесты</a></li>
+                <li class="footer__col-item"><a href="">Candy bar на свадьбу</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <div class="column__tittle column__tittle--wedding">Свадьбы</div>
+            <ul>
+                <li class="footer__col-item"><a href="">Свадьба под ключ</a></li>
+                <li class="footer__col-item"><a href="">Свадебный блог</a></li>
+            </ul>
+            <div class="column__tittle column__tittle--contact">Контакты</div>
+        </div>
+    </div>
+</footer>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;scroll=false" type="text/javascript"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.reviews__slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            variableWidth: true,
+            prevArrow: "<div class='prev'></div>",
+            nextArrow: "<div class='next'></div>",
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.small-portfolio-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: true,
+            arrows: true,
+            asNavFor: '.big-portfolio-slider',
+            prevArrow: "<div class='prev'></div>",
+            nextArrow: "<div class='next'></div>",
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+        $('.big-portfolio-slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            variableWidth: true,
+            arrows: false,
+            asNavFor: '.small-portfolio-slider',
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+
+        $('#hamb-icon').click(function(){
+            $(this).toggleClass('open');
+            $('#mobile-menu').toggleClass('open');
+        });
+
+        $('.services__item__order').click(function(e) {
+
+            e.preventDefault();
+            $('html').addClass('stop-scrolling');
+            $('.overlay').fadeIn(500);
+
+            var winH = $(window).height();
+            var winW = $(window).width();
+
+            $('.popup').css('top',  winH/2-$('.popup').height()/2);
+            $('.popup').css('left', winW/2-$('.popup').width()/2);
+            $('.popup').show();
+        });
+//        var $window = $(window);
+//
+//        function checkWidth() {
+//            var windowsize = $window.width();
+//            var $grid = $('#grid');
+//            if (windowsize >= 1200) {
+//                $grid.html(w1200);
+//            } else if (windowsize < 1200 && windowsize >= 992) {
+//                $grid.html(w992);
+//            } else if (windowsize < 992 && windowsize >= 768) {
+//                $grid.html(w768);
+//            } else if (windowsize < 768) {
+//                $grid.html(w320);
+//            }
+//        }
+//
+//        checkWidth();
+//        $(window).resize(checkWidth);
+//
+//        var grid = $('.grid').masonry({
+//            // options
+//            itemSelector: '.grid-item',
+//            columnWidth: 230,
+//            fitWidth: true,
+//            gutter: 30
+//        });
+//        grid.on('click', function () {
+//            $("#2").insertBefore( $("#1") );
+//           grid.masonry('reloadItems');
+//           console.log('ok');
+//        });
+    })
+</script>
+<script type="text/javascript">
+    var myMap, myPlacemark;
+    ymaps.ready(function(){
+        myMap = new ymaps.Map("map", {
+            center: [59.96781306, 30.30134250],
+            zoom: 16,
+            controls: []
+        });
+        myMap.behaviors.disable('scrollZoom');
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Цветочная кофейня',
+            balloonContent: 'Чкаловский пр., 52'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'images/label.png',
+            // Размеры метки.
+            iconImageSize: [645, 348],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-645, -160]
+        });
+        myMap.geoObjects.add(myPlacemark);
+    });
+</script>
+</body>
+</html>
