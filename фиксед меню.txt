@@ -1,0 +1,115 @@
+
+
+----------JS-----------:
+
+    $(window).scroll(function(){
+        var sticky = $('.header'),
+            scroll = $(window).scrollTop(),
+            width = $(window).width();
+
+        if (width >= 768) {
+            if (scroll >= 82) sticky.addClass('fixed-menu');
+            else sticky.removeClass('fixed-menu');
+        }
+    });
+
+    $(window).on('load resize', function() {
+        if($(window).width() < 768) {
+            $('.header').removeClass('fixed-menu');
+        }
+    });
+
+
+----------CSS----------:
+
+    ВНЕ МЕДИА:
+    /******************Fixed header********************/
+
+    .fixed-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 99999;
+        -webkit-box-shadow: 0px 3px 7px 0px rgba(128,128,128,.16);
+        -moz-box-shadow: 0px 3px 7px 0px rgba(128,128,128,.16);
+        box-shadow: 0px 3px 7px 0px rgba(128,128,128,.16);
+    }
+    .fixed-menu .logo-col {
+        width: 68px;
+    }
+    .fixed-menu .header__logo {
+        margin-top: 8px;
+    }
+    .fixed-menu .header__navigation {
+        height: 82px;
+        padding-top: 33px;
+    }
+    .fixed-menu .contacts__social {
+        display: none;
+    }
+    .fixed-menu .contacts {
+        height: auto;
+        margin-top: 0;
+    }
+    .fixed-menu .contacts__phone .number {
+        margin-bottom: 0;
+    }
+
+
+    MIN-768
+        .fixed-menu .header__navigation {
+            padding-top: 15px;
+        }
+        .header__navigation {
+            padding-top: 60px;
+        }
+        .header__navigation li {
+            margin-top: 5px;
+        }
+        .header__navigation a {
+            margin-right: 19px;
+        }
+        .fixed-menu .header__navigation a {
+            margin-right: 19px;
+        }
+
+    MIN-992
+        .fixed-menu .container {
+            width: 980px;
+        }
+        .fixed-menu .logo-col {
+            margin-right: 20px;
+        }
+        .fixed-menu .navigation-col {
+            width: 680px;
+        }
+        .fixed-menu .contacts-col {
+            width: 174px;
+        }
+        .fixed-menu .header__navigation {
+            padding-top: 25px;
+        }
+        .header__navigation a {
+            margin-right: 29px;
+        }
+
+            !!!!Этот замени он там есть!!!!
+            .navigation-col {
+                width: 401px;
+            }
+
+    MIN-1200
+        .header__navigation {
+            padding-top: 79px;
+        }
+        .header__navigation a {
+            margin-right: 19px;
+        }
+        .header__navigation li {
+            margin-top: 0;
+        }
+        .fixed-menu .header__navigation {
+            padding-top: 30px;
+        }

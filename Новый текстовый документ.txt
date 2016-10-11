@@ -1,0 +1,54 @@
+.services__item__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+добавил бордер радиус дл€ img
+
+grid-item теперь такой
+	<div class="grid-item">
+		<img src="./img/portfolio-3.jpg" alt="">
+		<a href=""><span class="border"></span></a>
+		<span class="grid-item__count">42 фото</span>
+		<p class="grid-item__pair-names">ƒмитрий и Ќадежда</p>
+		<p class="grid-item__title">—умерки</p>
+	</div>
+
+	.grid-item .border {
+    position: absolute;
+    border: 2px solid white;
+	}
+	
+	min 320
+	.grid-item .border {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+	}
+	
+	min 768
+	.grid-item .border {
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+	}
+	
+добавил span.border вместо outline и а теперь не на img а на этот border чтоб кликнуть можно было
+
+.grid-item a {
+    display: block;
+}
+тут height убрал, а то она вниз улетала куда-то после махинаций с бордером
+
+дл€ меню увеличил на 10px ширину
+
+	min 1200
+    .navigation-col {
+        width: 690px;
+    }
+
